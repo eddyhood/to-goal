@@ -1,0 +1,38 @@
+{
+  "name": "to-goal",
+  "version": "1.0.0",
+  "description": "A to-do list app that keeps you focused on your life's goals",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyhood/to-goal.git"
+  },
+  "author": "Eddy Hood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddyhood/to-goal/issues"
+  },
+  "homepage": "https://github.com/eddyhood/to-goal#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "popper.js": "^1.16.1"
+  }
+}
