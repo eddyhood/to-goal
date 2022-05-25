@@ -7,35 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <figure></figure>
-        <nav>
-            <ul>
-                <li>Add</li>
-                <li><button type="button" class="btn btn-primary">Hello</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="focus-window">
-        <h3 class="display-1" id="focus-title">Today's Focus</h3>
-        <ul>
-            <li>Focus 1</li>
-            <li>Focus 2</li>
-            <li>Focus 3</li>
-        </ul>
-    </main>
-    aside <div id="goal-list">
-        <ul>
-            <li>Goal 1</li>
-            <li>Goal 2</li>
-            <li>Goal 3</li>
-            <li>Goal 4</li>
-            <li>Goal 5</li>
-        </ul>
+    <div class="container-fluid border">
+        <header class="row">
+            <figure id="logo" class="col"></figure>
+            <nav class="col">
+                <ul>
+                    <li>Add</li>
+                    <li><button type="button" class="btn btn-dark">Hello</button></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="row">
+            <aside class="col" id="goal-list">
+                <ul>
+                    <li>Goal 1</li>
+                    <li>Goal 2</li>
+                    <li>Goal 3</li>
+                    <li>Goal 4</li>
+                    <li>Goal 5</li>
+                </ul>
+            </aside>
+            <main class="col" id="focus-window">
+                <h3 class="display-1" id="focus-title">Today's Focus</h3>
+                <ul>
+                    <li>Focus 1</li>
+                    <li>Focus 2</li>
+                    <li>Focus 3</li>
+                </ul>
+            </main>
+        </section>
+        <section class="row" id="quotes">
+            <p>Quotes</p>
+        </section>
+        <footer class="row"></footer>
     </div>
-    <section id="quotes">
-        <p>Quotes</p>
-    </section>
-    <footer></footer>
 <script defer src="bundle.js"></script></body>
 </html>
