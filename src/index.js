@@ -1,8 +1,13 @@
 import { Tooltip, Toast, Popover } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './images/logo.png'
+import { displayLogo } from './displayImages';
+import css from './icons/flaticon.css';
+import style from './style/style.css';
 
-const logoContainer = document.getElementById('logo');
-const logoAnchor = new Image();
-logoAnchor.src = logo;
-logoContainer.appendChild(logoAnchor);
+//Page layout
+displayLogo();
+
+
+
+
+
