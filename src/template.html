@@ -20,6 +20,22 @@
         </header>
         <section class="row" id="main">
             <aside class="col-md-4 card border" id="goal-list">
+                <form action="" method="post" id="goal-form">
+                    <h3>Add Goal</h3>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" name="goal-title" id="title">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="goal-description" id="description">
+                    </div>
+                    <div>
+                        <label for="date">Due Date</label>
+                        <input type="date" name="goal-date" id="date">
+                    </div>
+                    <div><button type="submit">Add</button></div>
+                </form>
                 <ul class="list-unstyled list-group list-group-flush">
                     <li class="list-group-item"><p>Goal 1: Do stuff</p></li>
                     <li class="list-group-item">Goal 2:  This is a really long goal description with way too much text</li>
