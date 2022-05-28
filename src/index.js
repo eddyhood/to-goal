@@ -8,11 +8,15 @@ import style from './style/style.css';
 displayLogo();
 const goalForm = document.getElementById('goal-form');
 const addBtn = document.getElementById('goal-btn');
-addBtn.addEventListener('click', e => {
-    goalForm.style.display = 'block';
-})
+addBtn.addEventListener('click', displayAddGoalForm);
 
-
+function displayAddGoalForm() {
+    if(goalForm.style.display == 'none') {
+        goalForm.style.display = 'block';
+    } else {
+        goalForm.style.display = 'none';
+    }
+}
 
 
 
