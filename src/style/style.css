@@ -18,13 +18,13 @@ footer {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: 100px;
 }
 
 #main {
     display: flex;
     flex-direction: row;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 #copyright {
@@ -87,10 +87,7 @@ footer {
 /*Responsive design styling */
 
 @media screen and (max-width: 1000px) {
-    #nav-spacer {
-        display: none;
-    }
-
+    
     header, #buttons {
         display: flex;
         flex-direction: column;
