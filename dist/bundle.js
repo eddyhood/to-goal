@@ -750,13 +750,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/displayImages.js":
+/***/ "./src/displayAssets.js":
 /*!******************************!*\
-  !*** ./src/displayImages.js ***!
+  !*** ./src/displayAssets.js ***!
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayLogo\": () => (/* binding */ displayLogo)\n/* harmony export */ });\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n\n\nfunction displayLogo() {\n    const logoContainer = document.getElementById('logo');\n    const logoAnchor = new Image();\n    logoAnchor.src = _images_logo_png__WEBPACK_IMPORTED_MODULE_0__;\n    logoAnchor.classList.add('w-25')\n    logoContainer.appendChild(logoAnchor);\n}\n\n//# sourceURL=webpack://to-goal/./src/displayImages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayAddGoalForm\": () => (/* binding */ displayAddGoalForm),\n/* harmony export */   \"displayLogo\": () => (/* binding */ displayLogo)\n/* harmony export */ });\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n\n\nfunction displayLogo() {\n    const logoContainer = document.getElementById('logo');\n    const logoAnchor = new Image();\n    logoAnchor.src = _images_logo_png__WEBPACK_IMPORTED_MODULE_0__;\n    logoAnchor.classList.add('w-25')\n    logoContainer.appendChild(logoAnchor);\n}\n\nfunction displayAddGoalForm() {\n    const goalForm = document.getElementById('goal-form');\n    if(goalForm.style.display == 'none') {\n        goalForm.style.display = 'block';\n    } else {\n        goalForm.style.display = 'none';\n    }\n}\n\n//# sourceURL=webpack://to-goal/./src/displayAssets.js?");
 
 /***/ }),
 
@@ -766,7 +766,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _displayImages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayImages */ \"./src/displayImages.js\");\n/* harmony import */ var _icons_flaticon_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons/flaticon.css */ \"./src/icons/flaticon.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n\n\n\n\n\n\n//Page layout\n(0,_displayImages__WEBPACK_IMPORTED_MODULE_2__.displayLogo)();\nconst goalForm = document.getElementById('goal-form');\nconst addBtn = document.getElementById('goal-btn');\naddBtn.addEventListener('click', displayAddGoalForm);\n\nfunction displayAddGoalForm() {\n    if(goalForm.style.display == 'none') {\n        goalForm.style.display = 'block';\n    } else {\n        goalForm.style.display = 'none';\n    }\n}\n\n\n\n\n\n//# sourceURL=webpack://to-goal/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _displayAssets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayAssets */ \"./src/displayAssets.js\");\n/* harmony import */ var _icons_flaticon_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons/flaticon.css */ \"./src/icons/flaticon.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n\n\n\n\n\n\n//User Interface\nconst addBtn = document.getElementById('goal-btn');\naddBtn.addEventListener('click', _displayAssets__WEBPACK_IMPORTED_MODULE_2__.displayAddGoalForm);\n\n//Render assets\n(0,_displayAssets__WEBPACK_IMPORTED_MODULE_2__.displayLogo)();\n(0,_displayAssets__WEBPACK_IMPORTED_MODULE_2__.displayAddGoalForm)();\n\n\n\n\n\n//# sourceURL=webpack://to-goal/./src/index.js?");
 
 /***/ }),
 

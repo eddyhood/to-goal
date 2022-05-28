@@ -7,3 +7,12 @@ export function displayLogo() {
     logoAnchor.classList.add('w-25')
     logoContainer.appendChild(logoAnchor);
 }
+
+export function displayAddGoalForm() {
+    const goalForm = document.getElementById('goal-form');
+    if(goalForm.style.display == 'none') {
+        goalForm.style.display = 'block';
+    } else {
+        goalForm.style.display = 'none';
+    }
+}

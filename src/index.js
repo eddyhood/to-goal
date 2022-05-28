@@ -1,22 +1,16 @@
 import { Tooltip, Toast, Popover } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { displayLogo } from './displayImages';
+import { displayLogo, displayAddGoalForm } from './displayAssets';
 import css from './icons/flaticon.css';
 import style from './style/style.css';
 
-//Page layout
-displayLogo();
-const goalForm = document.getElementById('goal-form');
+//User Interface
 const addBtn = document.getElementById('goal-btn');
 addBtn.addEventListener('click', displayAddGoalForm);
 
-function displayAddGoalForm() {
-    if(goalForm.style.display == 'none') {
-        goalForm.style.display = 'block';
-    } else {
-        goalForm.style.display = 'none';
-    }
-}
+//Render assets
+displayLogo();
+displayAddGoalForm();
 
 
 
