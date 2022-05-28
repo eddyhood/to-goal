@@ -55,6 +55,11 @@ footer {
     margin-bottom: 25px;
 }
 
+.goal-header{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*Goal Form Styles */
 #goal-form {
     display: none;
