@@ -33,7 +33,7 @@ footer {
     justify-content: center;
 }
 
-#goal-list, #focus-window {
+#focus-window {
     padding-top: 50px;
 }
 
@@ -58,7 +58,7 @@ footer {
 /*Goal Form Styles */
 #goal-form {
     display: none;
-    margin-bottom: 25px;
+    margin: 50px;
 }
 
 /*Responsive design styling */

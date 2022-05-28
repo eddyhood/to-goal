@@ -1,7 +1,7 @@
 import { Tooltip, Toast, Popover } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { displayLogo, displayAddGoalForm } from './displayAssets';
-import { createNewGoal } from './goals';
+import { createNewGoal, showGoals } from './goals';
 import css from './icons/flaticon.css';
 import style from './style/style.css';
 
@@ -16,6 +16,9 @@ goalForm.addEventListener('submit', e => {
 //Render assets
 displayLogo();
 displayAddGoalForm();
+showGoals();
+
+
 
 
 
