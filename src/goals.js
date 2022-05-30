@@ -64,3 +64,6 @@ export function showGoals() {
     }
 }
 
+export function sum(a, b) {
+    return a + b;
+}
