@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack serve --open",
-    "test": "jest --watch -verbose"
+    "test": "vitest --run --reporter verbose",
+    "test:watch": "vitest"
   },
   "jest": {
     "transform": {
@@ -24,18 +25,16 @@
   },
   "homepage": "https://github.com/eddyhood/to-goal#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.18.2",
     "autoprefixer": "^10.4.7",
-    "babel-jest": "^28.1.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^28.1.0",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "sass": "^1.52.1",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
+    "vitest": "^0.13.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"

@@ -1,8 +1,22 @@
-class Goal {
-    constructor(title, description, dueDate) {
-        this.title = title;
-        this.description = description;
+export class Entry {
+    constructor(title) {
+        this.title = String(title);
+        this.createDate = new Date();
+        this.complete = false;
+    }
+}
+
+class Goal extends Entry {
+    constructor(dueDate, description) {
         this.due = dueDate;
+        this.description = description;
+
+    }
+}
+
+class Focus extends Goal {
+    constructor(associatedGoal) {
+        this.goal = associatedGoal;
     }
 }
 
