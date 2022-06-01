@@ -1,3 +1,5 @@
+"use strict";
+
 export class Entry {
     constructor(title) {
         this.title = String(title);
@@ -6,25 +8,20 @@ export class Entry {
     }
 }
 
-class Goal extends Entry {
-    constructor(dueDate, description) {
+export class Goal extends Entry {
+    constructor(title, dueDate, description) {
+        super(title);
         this.due = dueDate;
         this.description = description;
 
     }
 }
 
-class Focus extends Goal {
-    constructor(associatedGoal) {
-        this.goal = associatedGoal;
-    }
-}
-
 export function createNewGoal(e) {
     const title = (e.target.elements['goal-title'].value);
-    const description = (e.target.elements['goal-description'].value);
     const dueDate = (e.target.elements['goal-date'].value);
-    let goal = new Goal(title, description, dueDate);
+    const description = (e.target.elements['goal-description'].value);
+    let goal = new Goal(title, dueDate, description);
     saveGoalToLocalStorage(title, goal);
 }
 
@@ -76,8 +73,4 @@ export function showGoals() {
 
         sidebarGoalList.appendChild(entry);
     }
-}
-
-export function sum(a, b) {
-    return a + b;
 }
